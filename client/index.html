@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAPP Tasks</title>
+    <link rel="stylesheet" href="/libs/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card card-body bg-dark mb-4">
+                    <h1>DAPP</h1>
+                    <h6>Decentralized Task App</h6>
+                    <span class="mt-3">Wallet:</span>
+                    <span id="account" class="gray"></span>
+                </div>
+                <p class="text-center gray">Demo using Metamask, Web3 - Blockchain - Solidity, Truffle, Ganacha, Mocha for testing</p>
+                <form id="taskForm" class="card card-body bg-dark mt-4">
+                    <h4>Save a Task</h4>
+                    <input 
+                        type="text" 
+                        class="form-control mt-3 mb-2" 
+                        name= "title"
+                        placeholder="Write a task" 
+                    />
+                    <textarea 
+                        row="2" id="" 
+                        class="form-control mb-3" 
+                        name="description"
+                        placeholder="Enter a description"
+                    ></textarea>                        
+                    <button class="btn btn-primary">Save</button>
+                </form>
+            </div>
+            <div class="col-md-8">
+                <div id="taskList"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./libs/@truffle/contract/browser-dist/truffle-contract.min.js"></script>
+    <script src="./app.js"></script>
+    <script src="./ui.js"></script>
+</body>
+</html>
