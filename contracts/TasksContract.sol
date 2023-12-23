@@ -4,7 +4,7 @@ pragma solidity ^0.8.15;
 contract TasksContract {
 
     constructor(){
-        createTask("First task", "I have to do something!");
+        createTask("My first task", "I have to do something today...");
     }
 
     event TaskCreated(
